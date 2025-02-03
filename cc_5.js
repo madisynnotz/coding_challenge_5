@@ -52,3 +52,12 @@ console.log("Total Revenue:", totalRevenue);
 const customers = ["Alice", "Bob", "Charlie", "David"];
 const foundCustomer = customers.find(customer => customer === "Charlie");
 console.log("Found Customer:", foundCustomer);
+
+// Task 8: Function Declaration
+function calculateTax(amount, taxRate) {
+    const tax = amount * taxRate;
+    console.log(`Calculated Tax: $${tax.toFixed(2)}`);
+    return tax;
+}
+
+calculateTax(1500, 0.10);
