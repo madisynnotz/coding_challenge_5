@@ -42,3 +42,8 @@ console.log("Discounted Prices:", discountedPrices);
 const inventory = [7, 10, 16, 9, 10];
 const availableStock = inventory.filter(quantity => quantity > 0);
 console.log("Available Stock:", availableStock);
+
+// Task 6: Reduce Method
+const sales = [400, 100, 600, 800];
+const totalRevenue = sales.reduce((acc, sale) => acc + sale, 0);
+console.log("Total Revenue:", totalRevenue);
