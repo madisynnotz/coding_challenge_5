@@ -8,3 +8,17 @@ const customer = {
 console.log(`Customer Name: ${customer.name}`);
 console.log(`Customer Age: ${customer.age}`);
 console.log(`Customer Email: ${customer.email}`);
+
+// Task 2: Object Methods
+const order = {
+    orderId: 04873,
+    totalAmount: 130,
+    status: "Processing",
+    displayOrder: function() {
+        console.log(`Order ID: ${this.orderId}`);
+        console.log(`Total Amount: $${this.totalAmount}`);
+        console.log(`Status: ${this.status}`);
+    }
+};
+
+order.displayOrder();
