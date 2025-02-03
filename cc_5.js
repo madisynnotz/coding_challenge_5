@@ -32,3 +32,8 @@ cartItems.unshift("Kiwi");
 cartItems.shift();
 
 console.log("Final Cart Items:", cartItems);
+
+// Task 4: Map Method
+const prices = [120, 300, 100];
+const discountedPrices = prices.map(price => price * 0.6);
+console.log("Discounted Prices:", discountedPrices);
