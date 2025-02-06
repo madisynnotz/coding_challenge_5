@@ -24,7 +24,7 @@ const order = { //declare object
 order.displayOrder();
 
 // Task 3: Array Manipulation (push, pop, shift, unshift)
-const cartItems = ["Apple", "Orange", "Berry"]; //decalre array
+const cartItems = ["Apple", "Orange", "Berry"]; //declare array
 
 cartItems.push("mango"); //add new product
 cartItems.pop("Berry"); //remove last item
