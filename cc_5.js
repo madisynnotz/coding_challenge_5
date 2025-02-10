@@ -39,18 +39,18 @@ const discountedPrices = prices.map(price => price * 0.10); //apply 10% discount
 console.log("Discounted Prices:", discountedPrices); //logged new discount price
 
 // Task 5: Filter Method
-const inventory = [7, 10, 16, 9, 10]; //declare array
-const availableStock = inventory.filter(quantity => quantity > 0); //remove products with zero stock
+let inventory = [7, 10, 16, 9, 10]; //declare array
+let availableStock = inventory.filter(quantity => quantity > 0); //remove products with zero stock
 console.log("Available Stock:", availableStock); //logged filtered array 
 
 // Task 6: Reduce Method
-const sales = [400, 100, 600, 800]; //declare array
-const totalRevenue = sales.reduce((acc, sale) => acc + sale, 0); //calculate total revenue 
+let sales = [400, 100, 600, 800]; //declare array
+let totalRevenue = sales.reduce((acc, sale) => acc + sale, 0); //calculate total revenue 
 console.log("Total Revenue:", totalRevenue); //logged total revenue 
 
 // Task 7: find() Method
-const customers = ["Alice", "Bob", "Charlie", "David"]; //declare array
-const foundCustomer = customers.find(customer => customer === "Charlie"); //locate the customer using .find
+let customers = ["Alice", "Bob", "Charlie", "David"]; //declare array
+let foundCustomer = customers.find(customer => customer === "Charlie"); //locate the customer using .find
 console.log("Found Customer:", foundCustomer); //logged result 
 
 // Task 8: Function Declaration
@@ -63,7 +63,7 @@ function calculateTax(amount, taxRate) { //Return the calculated tax and log it 
 calculateTax(1500, 0.10);
 
 // Task 9: Function Expression
-const applyDiscount = function(price, discount) { //declare function expression 
+let applyDiscount = function(price, discount) { //declare function expression 
     // const discountedPrice = price - (price * discount); //Return the discounted price
     console.log(`Discounted Price: $${discountedPrice.toFixed(2)}`); //log 
     return discountedPrice;
@@ -72,8 +72,8 @@ const applyDiscount = function(price, discount) { //declare function expression
 applyDiscount(1000, 0.08);
 
 // Task 10: Arrow Function
-const calculatePoints = purchaseAmount => { //arrow function
-    const points = Math.floor(purchaseAmount / 10); //Return 1 point per $10 spent and log the result
+let calculatePoints = purchaseAmount => { //arrow function
+    let points = Math.floor(purchaseAmount / 10); //Return 1 point per $10 spent and log the result
     console.log(`Loyalty Points Earned: ${points}`);
     return points;
 };
